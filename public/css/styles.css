@@ -1,0 +1,91 @@
+body {
+    color: #333333;
+    font-family: Arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    columns: #888888;
+    border-top:1px solid #eeeeee ; 
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+h1{
+    font-size: 64px;
+    margin: 16px;
+}
+
+header a {
+    color:#888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 250px
+}
+
+.search-field {
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #aaa;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 3s;
+
+}
+
+.search-field:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+
+}
+
+.search-btn{
+    border-color:blue;
+    background-color: dodgerblue;
+    margin: 2px;
+    font-size: 19px;
+    border-radius: 4px;
+}
+
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid dodgerblue;
+    background-color: lightblue;
+  }
+
+.table-hide {
+    visibility: hidden;
+}
+
+tr,td,th {
+    border-style: solid;
+    border-color: dodgerblue;
+    text-align: center;
+}
+
+
+
