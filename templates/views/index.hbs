@@ -20,22 +20,27 @@
         {{>header}} 
         <br>
         <input type="text" class="search-field" placeholder="Insert Location"> <button class="search-btn">Search</button>
-        <p class="error"></p>
-        <table class="table table-hide">
-            <thead class="thead-1">
-                <th><i class="fas fa-temperature-low"> </i>  Temperature</th>
-                <th><i class="fas fa-sticky-note">  </i>  Summary</th>
-                <th><i class="fas fa-location-arrow"></i>  Location</th>
-            </thead>
-            <tbody>
-                <tr>
-                <td id="temp"></td>
-                <td id="sum"></td>
-                <td id="local"></td>
-                </tr>
-            </tbody>
-        </table>
+            <p class="error"></p>
+            <table class="table table-hide">
+                <thead class="thead-1">
+                    <th><i class="fas fa-temperature-low"> </i>  Temperature</th>
+                    <th><i class="fas fa-sticky-note">  </i>  Summary</th>
+                    <th><i class="fas fa-location-arrow"></i>  Location</th>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td id="temp"></td>
+                    <td id="sum"></td>
+                    <td id="local"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="mintainer" class="min-max">
+                <h3>TempMin:</h3> <p id="p_tempMin"></p>
+                <h3>TempMax:</h3> <p id="p_tempMax"></p>
+            </div>
         </div>
+
        {{>footer}}
        <script src="./js/main.js"></script>
     </body>

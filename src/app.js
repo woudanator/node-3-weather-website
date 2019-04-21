@@ -39,11 +39,11 @@ app.get('/weather',(req,res)=>{
         if(error){
             return res.send({error});
         } 
-        weather(latitude,longitude,(error,{temperature,summary}={})=>{
+        weather(latitude,longitude,(error,{temperature,summary,temperatureMin,temperatureMax}={})=>{
             if (error){
                 return res.send({error});
             }
-            res.send({forcast:{temperature,summary},location});
+            res.send({forcast:{temperature,summary,temperatureMin,temperatureMax},location});
         })
     })
 

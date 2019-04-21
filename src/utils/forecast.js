@@ -10,7 +10,9 @@ request({url:'https://api.darksky.net/forecast/c543477a3eccfddc39deb03c46037898/
    }else{
         callback(undefined,{
             temperature: body.currently.temperature,
-            summary : body.daily.data[0].summary
+            summary : body.daily.data[0].summary,
+            temperatureMin: body.daily.data[0].temperatureMin,
+            temperatureMax: body.daily.data[0].temperatureMax
         })
    }  
 })
